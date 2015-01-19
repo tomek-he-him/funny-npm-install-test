@@ -1,0 +1,1 @@
+# funny-npm-install-test
