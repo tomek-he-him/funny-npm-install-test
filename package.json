@@ -1,1 +1,54 @@
-{ "name": "funny-npm-install-test", "version": "0.0.0", "dependencies": { "gulp-messageformat-bundle": "*" } }
+{ "name": "funny-npm-install-test"
+, "version": "0.0.0"
+, "private": true
+
+, "scripts":
+  { "prestart": "npm run build"
+  , "start": "superstatic --port 8010 --host 0.0.0.0"
+
+  , "build": "npm install && gulp build"
+  , "watch": "npm install && gulp watch"
+  , "live": "npm install && gulp live"
+
+  , "refresh-dependencies": "rm -f npm-shrinkwrap.json && npm install && npm shrinkwrap --dev"
+  }
+
+, "dependencies":
+  { "superstatic": "1.1.6"
+  }
+, "devDependencies":
+  { "traceur": "0.0.72"
+
+  , "101-es6": "tomekwi/101-es6#for-ivp"
+  , "mithril": "0.1.28"
+
+  , "101": "0.8.0"
+  , "as": "0.2.0-alpha.2"
+  , "async": "0.9.0"
+  , "del": "1.0.0"
+  , "format-json": "1.0.3"
+  , "lazypipe": "0.2.2"
+  , "through2": "0.6.3"
+  , "minimatch": "2.0.1"
+
+  , "gulp": "3.8.10"
+  , "gulp-beautify": "1.1.1"
+  , "gulp-data-module": "0.0.4"
+  , "gulp-es6-module": "tomekwi/gulp-es6-module#0.0.1"
+  , "gulp-json-transform": "0.2.0"
+  , "gulp-less": "1.3.6"
+  , "gulp-livereload": "2.1.0"
+  , "gulp-messageformat-bundle": "0.0.4"
+  , "gulp-minify-css": "0.3.10"
+  , "gulp-minify-html": "0.1.7"
+  , "gulp-mustache": "1.0.0"
+  , "gulp-plumber": "0.6.4"
+  , "gulp-rename": "1.2.0"
+  , "gulp-shell": "0.2.10"
+  , "gulp-sourcemaps": "1.2.2"
+  , "gulp-uglify": "1.0.1"
+  , "gulp-util": "3.0.1"
+  , "gulp-yaml": "0.2.3"
+  }
+}
+
