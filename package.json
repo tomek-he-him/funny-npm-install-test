@@ -1,1 +1,1 @@
-{ "name": "funny-npm-install-test", "version": "0.0.0", "dependencies": { "messageformat": "*" } }
+{ "name": "funny-npm-install-test", "version": "0.0.0", "dependencies": { "gulp-messageformat-bundle": "*" } }
